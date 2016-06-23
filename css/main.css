@@ -17,4 +17,16 @@
   margin: 1em;
   border-radius: 3px;
   height: 200px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .card .back, .card.flipped {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
